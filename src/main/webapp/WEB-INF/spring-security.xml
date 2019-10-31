@@ -23,6 +23,10 @@
             user-service-ref="userService" />
     </security:authentication-manager>
     
+    <security:http>
+    	 
+    </security:http>
+    
     <security:http auto-config="true">
         <security:intercept-url pattern="/user/*" access="hasRole('ROLE_USER')" />
         <security:intercept-url pattern="/admin/*" access="hasRole('ROLE_ADMIN')" />
